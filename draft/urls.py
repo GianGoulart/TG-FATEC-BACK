@@ -16,5 +16,11 @@ urlpatterns = [
 
     url(r'^atletas-posicoes/$', views.Atletas_PosicoesList.as_view(), name='atletas_posicoes-list'),
     url(r'^atletas-posicoes/(?P<pk>[0-9]+)/$', views.Atletas_PosicoesDetail.as_view(), name='atletas_posicoes-detail'),
+
+    url(r'^dados-atletas/$', views.DadosAtletasList.as_view(), name='dados-atletas-list'),
+    url(r'^dados-atletas/(?P<pk>[0-9]+)/$', views.DadosAtletasDetail.as_view(), name='dados-atletas-detail'),
+
+    url(r'^resultados/$', views.ResultadosList.as_view(), name='resultados-list'),
     
+    url(r'^medias/$', views.MediasList.as_view(), name='resultados-list'),
 ]
