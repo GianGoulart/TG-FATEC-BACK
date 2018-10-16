@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_filters',
+    'whitenoise.django'
 ]
 
 MIDDLEWARE = [
@@ -92,10 +93,10 @@ WSGI_APPLICATION = 'footballmanager.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'footballmanager',
-        'USER':'root',
-        'PASSWORD':'1234',
-        'HOST':'127.0.0.1'
+        'NAME': 'heroku_71f9efa0a9489af',
+        'USER':'be507c3fdbbb00',
+        'PASSWORD':'051a8458',
+        'HOST':'us-cdbr-iron-east-01.cleardb.net'
     }
 }
 
@@ -139,3 +140,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
