@@ -30,8 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-PORT = '8010'
-
 # Application definition
 
 INSTALLED_APPS = [
