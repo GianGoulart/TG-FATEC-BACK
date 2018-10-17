@@ -29,9 +29,7 @@ SECRET_KEY = 'yx9u0)9aq5#-5x$@p5p4(yia!&_vzns_t9d!gickgrchjt@btx'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://tg-fatec.herokuapp.com/',
-    'https://footballmanager-47f29.firebaseapp.com/'
-    
+    'tg-fatec.herokuapp.com/',    
 ]
 
 # Application definition
