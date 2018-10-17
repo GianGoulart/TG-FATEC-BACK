@@ -29,7 +29,7 @@ SECRET_KEY = 'yx9u0)9aq5#-5x$@p5p4(yia!&_vzns_t9d!gickgrchjt@btx'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'tg-fatec.herokuapp.com/',    
+    'tg-fatec.herokuapp.com'   
 ]
 
 # Application definition
