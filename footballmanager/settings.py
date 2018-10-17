@@ -28,7 +28,11 @@ SECRET_KEY = 'yx9u0)9aq5#-5x$@p5p4(yia!&_vzns_t9d!gickgrchjt@btx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://tg-fatec.herokuapp.com/',
+    'https://footballmanager-47f29.firebaseapp.com/'
+    
+]
 
 # Application definition
 
@@ -60,11 +64,15 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
-    'https://footballmanager-47f29.firebaseapp.com/'
+    'https://footballmanager-47f29.firebaseapp.com/',
+    'https://tg-fatec.herokuapp.com/',
+    '*'
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
     'localhost:3000',
-    'https://footballmanager-47f29.firebaseapp.com/'
+    'https://footballmanager-47f29.firebaseapp.com/',
+    'https://tg-fatec.herokuapp.com/',
+    '*'
 )
 
 ROOT_URLCONF = 'footballmanager.urls'
