@@ -30,6 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+PORT = '8010'
 
 # Application definition
 
@@ -61,9 +62,11 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
+    'https://footballmanager-47f29.firebaseapp.com/'
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
     'localhost:3000',
+    'https://footballmanager-47f29.firebaseapp.com/'
 )
 
 ROOT_URLCONF = 'footballmanager.urls'
