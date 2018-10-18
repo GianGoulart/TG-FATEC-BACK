@@ -192,6 +192,7 @@ class MediasList(generics.ListCreateAPIView):
                 where	a.idAtleta = b.idAtleta_id
                 and		a.idAtleta= c.idAtleta_id
                 and		b.idPosicao_id = d.idPosicao
+                and     a.tipo = 1
                 group by posicao;''')
     
         posicao = self.request.query_params.get('posicao', None)
@@ -207,6 +208,7 @@ class MediasList(generics.ListCreateAPIView):
                 where	a.idAtleta = b.idAtleta_id
                 and		a.idAtleta= c.idAtleta_id
                 and		b.idPosicao_id = d.idPosicao
+                and     a.tipo = 1
                 and     d.idPosicao = '''+posicao +
                 '''   group by posicao;''' )
         return queryset
